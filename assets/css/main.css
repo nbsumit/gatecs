@@ -23,6 +23,7 @@ html, body {
     --primary-color: #007BFF;
     --text-color: #333333;
     --background-color: #F5F5F5;
+    --hover-color: rgba(0, 123, 255, 0.85);
 }
 
 body {
@@ -52,6 +53,7 @@ header {
     font-size: 1.5rem;
     font-weight: bold;
     font-family: 'Ubuntu';
+    text-transform: lowercase;
 }
 
 #cs {
@@ -71,8 +73,53 @@ main {
     text-align: center;
 }
 
+h1 {
+    font-size: 1.75rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
 .tagline, .note {
     text-align: center;
+}
+
+.btn {
+    background-color: var(--primary-color);
+    border-radius: 0.5rem;
+
+    padding: 0.5rem 0.65rem;
+    cursor: pointer;
+}
+
+.btn > a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+.btn:hover {
+    background-color: var(--hover-color);
+}
+
+table {
+    width: 100%;
+
+    border: 1px solid var(--text-color);
+    border-collapse: collapse;
+
+    margin: 1rem 0;
+}
+
+th, td {
+    text-align: center;
+
+    border: 1px solid var(--text-color);
+    padding: 0.5rem 0.65rem;
+}
+
+td > a {
+    text-decoration: none;
 }
 
 footer {
@@ -81,7 +128,7 @@ footer {
     display: flex;
     justify-content: center;
 
-    margin-top: 1rem;
+    padding: 1rem 0;
 }
 
 .footer {
@@ -104,11 +151,35 @@ footer {
     .nav-bar, .container {
         width: 88%;
     }
+
+    .logo {
+        font-size: 1.4rem;
+    }
+
+    h1 {
+        font-size: 1.65rem;
+    }
+
+    h2 {
+        font-size: 1.45rem;
+    }
 }
 
 @media (max-width: 576px) and (min-width: 301px) {
     .nav-bar, .container {
         width: 92%;
+    }
+
+    .logo {
+        font-size: 1.25rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
     }
 
     .footer {
