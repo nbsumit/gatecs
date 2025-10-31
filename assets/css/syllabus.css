@@ -1,0 +1,19 @@
+@import url(main.css);
+
+.section-title {
+    font-size: 1.05rem;
+    font-weight: bold;
+    color: var(--primary-color);
+
+    text-align: left;
+
+    margin: 1rem 0;
+}
+
+.subject-syllabus {
+    text-align: justify;
+}
+
+.topic-title {
+    color: var(--primary-color);
+}
