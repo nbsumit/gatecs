@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+@font-face {
+    font-family: 'PTSans';
+    src: url(../fonts/PTSans-Regular.ttf)format('truetype');
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url(../fonts/Ubuntu-Regular.ttf)format('truetype');
+}
+
+:root {
+    --primary-color: #007BFF;
+    --text-color: #333333;
+    --background-color: #F5F5F5;
+}
+
+body {
+    font-family: 'PTSans', sans-serif;
+    color: var(--text-color);
+
+    background-color: var(--background-color);
+}
+
+header {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+}
+
+.nav-bar {
+    width: 60%;
+    height: 4rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'Ubuntu';
+}
+
+#cs {
+    color: var(--primary-color);
+}
+
+main {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 60%;
+
+    text-align: center;
+}
+
+.tagline, .note {
+    text-align: center;
+}
+
+footer {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+
+    margin-top: 1rem;
+}
+
+.footer {
+    font-size: 0.95rem;
+}
+
+@media (max-width: 1200px) and (min-width: 993px) {
+    .nav-bar, .container {
+        width: 70%;
+    }
+}
+
+@media (max-width: 992px) and (min-width: 769px) {
+    .nav-bar, .container {
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) and (min-width: 577px) {
+    .nav-bar, .container {
+        width: 88%;
+    }
+}
+
+@media (max-width: 576px) and (min-width: 301px) {
+    .nav-bar, .container {
+        width: 92%;
+    }
+
+    .footer {
+        font-size: 0.85rem;
+    }
+}
